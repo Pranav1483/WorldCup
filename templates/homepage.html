@@ -6,8 +6,77 @@
         <br></br>
         <form action='predict/' method='post'>
             {% csrf_token %}
-            <input name='team1' placeholder='Team A'>
-            <input name='team2' placeholder='Team B'>
+            <label for="team1">Choose Team-A:</label>
+            <select name="team1">
+            <option value="Qatar">Qatar</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="England">England</option>
+            <option value="Iran">Iran</option>
+            <option value="USA">USA</option>
+            <option value="Wales">Wales</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Saudi">Saudi</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Poland">Poland</option>
+            <option value="France">France</option>
+            <option value="Australia">Australia</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Spain">Spain</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Canada">Canada</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Uruguay"></option>
+            <option value="South Korea">South Korea</option>
+            </select>
+            <label for="team2">Choose Team-B:</label>
+            <select name="team2">
+            <option value="Qatar">Qatar</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="England">England</option>
+            <option value="Iran">Iran</option>
+            <option value="USA">USA</option>
+            <option value="Wales">Wales</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Saudi">Saudi</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Poland">Poland</option>
+            <option value="France">France</option>
+            <option value="Australia">Australia</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Tunisia">Tunisia</option>
+            <option value="Spain">Spain</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Canada">Canada</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="South Korea">South Korea</option>
+            </select>
+            <br></br>
             <input type='submit' value='Predict'>
         </form>
     <body>
