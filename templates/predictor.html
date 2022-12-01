@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>RESULTS</head>
+    <body>
+        <br></br>
+        <br></br>
+        <p1>{{ winner }}</p1>
+        <br></br>
+        <p1>Goal Difference : {{ gd }}</p1>
+        <br></br>
+        <br></br>
+        <form action="exit/" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Home">
+        </form>
+    </body>
+</html>

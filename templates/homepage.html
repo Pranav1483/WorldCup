@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>Welcome</head>
+    <body>
+        <br></br>
+        <br></br>
+        <form action='predict/' method='post'>
+            {% csrf_token %}
+            <input name='team1' placeholder='Team A'>
+            <input name='team2' placeholder='Team B'>
+            <input type='submit' value='Predict'>
+        </form>
+    <body>
