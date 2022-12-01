@@ -27,9 +27,6 @@ def predict(request):
             winner = team1
         elif res < 0:
             winner = team2
-        if abs(res - int(res)) < 0.3:
-            winner = 'Draw'
-            res = 0
         res = abs(round(res, 2))
         template = loader.get_template('predictor.html')
         context = {'winner': winner, 'gd': res}
