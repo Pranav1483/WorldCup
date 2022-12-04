@@ -24,7 +24,7 @@ def predict(request):
         X2 = [t2 + t1]
         res1 = model.predict(X1)[0]
         res2 = model.predict(X2)[0]
-        res = (res1 + res2)//2
+        res = (res1 + res2)/2
         winner = 'Draw'
         if res > 0:
             winner = team1
