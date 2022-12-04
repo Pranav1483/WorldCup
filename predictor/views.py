@@ -20,8 +20,11 @@ def predict(request):
         model = pickle.load(open('knn_model', 'rb'))
         t1 = df[df['Name'] == team1].values.tolist()[0][1:]
         t2 = df[df['Name'] == team2].values.tolist()[0][1:]
-        X = [t1 + t2]
-        res = model.predict(X)[0]
+        X1 = [t1 + t2]
+        X2 = [t2 + t1]
+        res1 = model.predict(X1)[0]
+        res2 = model.predict(X2)[0]
+        res = (res1 + res2)//2
         winner = 'Draw'
         if res > 0:
             winner = team1
